@@ -9,40 +9,55 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="http://localhost:8080" method="post" 
+    <form action="#" method="post" 
     class="form">
       <div class="form__block block">
         <fieldset class="block-title">
           <legend class="block__subtitle">Personal information</legend>
           <div class="block__item item-block">
             <label for="surname" class="item-block__label">Surname:
-              <input id="surname" autocomplete="off" 
-              type="text" class="item-block__input">
+              <input name="second-name" 
+              id="surname" 
+              autocomplete="off" 
+              type="text" 
+              class="item-block__input">
             </label>
           </div>
           <div class="block__item item-block">
-            <label for="name" class="item-block__label">Name:
-              <input id="name" autocomplete="off" 
+            <label for="name" 
+            class="item-block__label">Name:
+              <input id="name" 
+              autocomplete="off" 
+              name="first-name"
               class="item-block__input">
             </label>
           </div>
           <div class="block__item item-block">
             <label for="age" class="item-block__label">How old are You?
-              <input id="age" value="12" 
-              min="1" max="100" 
+              <input id="age" 
+              value="12" 
+              name="how-old-are-you"
+              min="1" 
+              max="100" 
               type="number" 
               class="item-block__input">
             </label>
           </div>
           <div class="block__item item-block">
-            <label for="date" class="item-block__label">Full date of birth:
-              <input id="date" type="date" 
+            <label for="date" 
+            class="item-block__label">Full date of birth:
+              <input id="date" 
+              type="date" 
+              name="birth-date"
               class="item-block__input">
             </label>
           </div>
           <div class="block__item item-block last">
-            <label for="accept" class="item-block__label">I accept the term of the agreement
-              <input id="accept" type="checkbox" 
+            <label for="accept" 
+            class="item-block__label">I accept the term of the agreement
+              <input id="accept" 
+              type="checkbox" 
+              name="accept-the-agreement"
               class="item-block__input">
             </label>
           </div>
@@ -59,9 +74,13 @@
           </div>
           <div class="block__item item-block last">
             <label for="pass" class="item-block__label">Password:
-              <input id="pass" minlength="3" 
-              maxlength="12" required 
-              type="password" class="item-block__input">
+              <input id="pass"
+              minlength="3"
+              name="password"
+              maxlength="12"
+              required 
+              type="password" 
+              class="item-block__input">
             </label>
           </div>
         </fieldset>
@@ -88,8 +107,11 @@
             </label>
           </div>
           <div class="block__item item-block">
-            <label for="time" class="item-block__label">What time do you go to bed?
-              <input id="time" type="time" 
+            <label for="time" 
+            class="item-block__label">What time do you go to bed?
+              <input id="time" 
+              type="time" 
+              name="time-to-bed"
               class="item-block__input">
             </label>
           </div>
@@ -97,15 +119,18 @@
             <label for="cars" class="item-block__label">What are your favorite brand of cars:
               <select name="cars" multiple 
               id="cars" class="item-block__select">
-                <option value="bmw">BMW</option>
-                <option value="audi">Audi</option>
-                <option value="peugeot">Lada</option>
+                <option value="Bmw">BMW</option>
+                <option value="Audi">Audi</option>
+                <option value="Lada">Lada</option>
               </select>
             </label>
           </div>
           <div class="block__item item-block last">
-            <label for="rate" class="item-block__label">How do you rate our work?
-              <input id="rate" type="range" 
+            <label for="rate" 
+            class="item-block__label">How do you rate our work?
+              <input id="rate" 
+              type="range" 
+              name="rating"
               class="item-block__input">
             </label>
           </div>
@@ -123,9 +148,9 @@
           <div class="block__item item-block last">
             <label for="mult" class="item-block__label">Would you recommend us?
               <select id="mult" class="item-block__select">
-                <option value="bmw">Yes</option>
-                <option value="audi">No</option>
-                <option value="peugeot">I do not know</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+                <option value="do not know">I do not know</option>
               </select>
             </label>
           </div>
